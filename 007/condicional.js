@@ -1,0 +1,121 @@
+/*let numero = prompt('Digite um número')
+if (numero > 90 && numero < 110){
+    console.log('Bingo')
+} else{
+    console.log('Voçê falhou')
+}
+let numero = prompt('Digite um número')
+numero > 90 && numero < 110? console.log('Bingo'):console.log('Você Falhou')
+
+let number = prompt("Digite um número: ");
+let messagem = (number > 90 && number < 110) ? "Bingo!": "Você Falhou";
+alert(messagem);
+
+let numero = Number(prompt('Digite o primeiro número'))
+let sinal = prompt('Digite um dos sinais: +, -, /, *')
+let Numero = Number(prompt('Digite o segundo número'))
+if (sinal== '+'){
+    console.log(numero + Numero)
+} else if(sinal == '-'){
+    console.log(numero - Numero)
+} else if(sinal == '/'){
+    console.log(numero / Numero)
+} else if(sinal == '*'){
+    console.log(numero * Numero)
+}else{
+    console.log('Ocorreu Um ERRO!')
+}
+
+let firstNumber = Number(prompt("Introduce o primeiro número: "));
+let secondNumber = Number(prompt("Introduce o segundo número: "));
+let operand = prompt("Introduce o operando (+, -, * o /)");
+let result;
+
+if (!Number.isNaN(firstNumber) && !Number.isNaN(secondNumber)) {
+    switch (operand) {
+        case "+": result = firstNumber + secondNumber; break;
+        case "-": result = firstNumber - secondNumber; break;
+        case "*": result = firstNumber * secondNumber; break;
+        case "/": result = firstNumber / secondNumber; break;
+        default: result = "Error: operando desconhecido";
+    }
+} else {
+    result = "Error: al menos uno de los valores ingresados no es un número";
+}
+alert(result);*/
+/*
+Vamos um passo além: tente modificar o programa para que o usuário possa escolher o que deseja fazer com a lista. As opções serão:
+Mostrar primeiro contato (primeiro)
+Mostrar último contato (último)
+Adicionar um novo contato (novo)
+
+
+
+let contacto = [
+    {
+        Nome: 'Dionisio Pinto',
+        Telefone: 932767426,
+        email: 'mulando1993@gmail.com'
+    },
+    {
+        Nome: 'Genisio Mulando',
+        Telefone: 993301724,
+        email: 'genisio@gmail.com'
+    },
+    {
+
+    }
+]
+let opcoes = Number(prompt('Digite 1 para 1º Contac, 2 para último Contac e 3 para Novo Contac'));
+let ultimo = contacto-1
+if (opcoes == 1){
+    console.log(contacto[0])
+} else if(opcoes == 2){
+    console.log(contacto[ultimo])
+}/*else if(opcoes == 3){
+    contacto[1].Nome = prompt('Digite um  nome')
+    contacto[1].Telefone = Number(prompt('Digite o seu numero'))
+    contacto[1].email = prompt('Digite o seu email')
+}*/
+//console.log(contacto)
+//console.log(contacto[ultimo])
+
+//Faça um script que verifique se uma letra digitada num campo de input é vogal ou consoante.
+/*let letra = prompt('Digite uma letra')
+if (letra == 'a'|| letra == 'e'|| letra == 'i'|| letra == 'o'|| letra == 'u'){
+    alert(`A letra ${letra} é uma vogal`)
+} else{
+    alert(`A letra ${letra} é uma Consoante`)
+}*/
+
+/*Faça um script que pede duas notas de um aluno. Em seguida ele deve calcular a média do aluno e dar o seguinte resultado:
+
+    A mensagem "Aprovado", se a média alcançada for maior ou igual a sete;
+    A mensagem "Reprovado", se a média for menor do que sete;
+    A mensagem "Aprovado com Distinção", se a média for igual a dez.
+
+let nota1 = Number(prompt('Introduza a 1º nota '))
+let nota2 = Number(prompt('Introduza a 2º nota'))
+let media = (nota1 + nota2) / 2
+if (media >= 7 && media < 10){
+    console.log(`A sua media é ${media} "APROVADO"`)
+}else if(media < 7){
+    console.log(`A sua media é ${media} "REPROVADO"`)
+}else if (media == 10){
+    console.log(`A sua media é ${media} "APROVADO COM DISTINÇÃO"`)
+}else{
+    console.log('Valores não reconhecido')
+}*/
+//Faça um script que leia três números inteiros e mostre o maior deles.
+/*let numero1 = Number(prompt('Digite o 1º número'))
+let numero2 = Number(prompt('Digite o 2º número'))
+let numero3 = Number(prompt('Digite o 3º número'))
+if (numero1>numero2 && numero1>numero3){
+    console.log(`O  1º número ${numero1} é MAIOR em relação ao número ${numero2} e ${numero3}`)
+} else if (numero2>numero1 && numero2>numero3){
+    console.log(`O 2º número ${numero2} é MAIOR em relação ao número ${numero1} e ${numero3}`)
+} else{
+    console.log(`O 3º número ${numero3} é MAIOR em relação ao número ${numero2} e ${numero1}`)
+}*/
+/*
+Faça um script que pede dois inteiros e armazene eles em duas variáveis. Em seguida, troque o valor das variáveis, invertendo e exibindo o antes e o depois em uma janela de alert.*/

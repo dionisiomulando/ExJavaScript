@@ -1,0 +1,106 @@
+/*1.	Faça um programa que peça uma nota, entre zero e dez. Mostre uma mensagem caso o valor seja inválido e continue pedindo até que o usuário informe um valor válido. 
+while (true){
+    let nota = Number(prompt('Digite a nota '))
+    if (nota > 0 && nota <= 10){
+        console.log(`Nota ${nota} válida`)
+        break        
+    } else if (nota > 10){
+        console.log(`Nota ${nota} inválida`)  
+    } else {
+        console.log(`Não é número ${nota}`)
+    }    
+}
+
+let nota = 0
+while (true){
+    let nota = Number(prompt('Digite a nota '))
+    nota > 0 && nota <= 10 ? console.log(`Nota ${nota} válida`) : console.log(`Nota ${nota} inválida`)
+        
+}*/
+/*
+
+2- Faça um programa que leia um nome de usuário e a sua senha e não aceite a senha igual ao nome do usuário, mostrando uma mensagem de erro e voltando a pedir as informações.
+while(true){
+    let nome = prompt('Digite seu nome')
+    let senha = prompt('Digite sua senha')
+    if (nome != senha){
+        console.log('BEM VINDO AO SISTEMA')
+    break      
+    } else{
+        console.log(` Erro! o Nome '${nome}' é igual a senha '${senha}'`)
+    }
+} */
+
+/*
+3- Faça um programa que leia e valide as seguintes informações:
+a.	Nome: maior que 3 caracteres;
+b.	Idade: entre 0 e 150;
+c.	Salário: maior que zero;
+d.	Sexo: 'f' ou 'm';
+e.	Estado Civil: 's', 'c', 'v', 'd';
+Dica: se sua variável é texto, o tamanho dela está armazenado em: texto.length
+
+while (true) {
+    let nome = prompt('Digite o nome ')
+    if (nome.length > 3){
+        console.log(`Bem vindo ${nome}`)
+    } else{
+        console.log(`O seu Nome só tem ${nome.length} letras`)
+    }
+    let idade = Number(prompt('Digite a sua idade '))
+    if (idade > 0 && idade < 150){
+        console.log('Idade Aceite')
+    } else if (idade > 150){
+        console.log('Já estas morto')
+    } else{
+        console.log('Não digitaste um número')
+    }
+    let salario = Number(prompt('Digite o seu salario '))
+    if(salario > 0){
+        console.log(`O seu salario é de ${salario}`)
+    } else{
+        console.log(`Salario de ${salario} é inválido`)
+    }
+    let sexo = prompt('Seu genero ').toUpperCase();
+    if (sexo == 'M' ){
+        console.log(`Voce é Homen`)
+    } else if (sexo == 'F'){
+        console.log('Você é mulher')
+    } else {
+        console.log('Genero invalido')
+    }
+    let estadoCivil = prompt('Seu estado sivil').toUpperCase()
+    switch (estadoCivil) {
+        case 's':
+            console.log(`Você é solteiro`)            
+            break;
+        case 'c':
+            console.log('Você é casado')
+            break;
+        case 'd':
+            console.log('Vce é divorciado')
+            break;
+        case 'v':
+            console.log('Você é viuvo')
+        default:
+            console.log('Estado civil inexistente')
+            break;
+    }
+    break
+}
+*/
+/*
+Supondo que a população de um país A seja da ordem de 80000 habitantes com uma taxa anual de crescimento de 3% e que a população de B seja 200000 habitantes com uma taxa de crescimento de 1.5%. Faça um programa que calcule e escreva o número de anos necessários para que a população do país A ultrapasse ou iguale a população do país B, mantidas as taxas de crescimento.
+*/
+let paisA = 80000;
+let taxaAnualA = 0.03;
+let paisB = 200000;
+let taxaAnualB = 0.015;
+let ano = 0//Number(prompt('Digite o número de ano '))
+
+while (paisA + (paisA * taxaAnualA)) {
+    ano *= paisA
+    if (paisA >= paisB){
+        console.log(`O pais A é igual ou superior ao Pais B`)
+    } 
+}
