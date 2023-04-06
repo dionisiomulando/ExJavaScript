@@ -244,76 +244,11 @@ console.log(`${contacto[0].email}`)
 let opcao1 = prompt('Mostrar primeiro contato')
 let opcao2 = prompt('Mostrar último contato ')
 let opcao3 = prompt('Mostrar todos os contatos ')
-
-let n = 100;
-while (n > 0) {
-    console.log(n);
-    n --;
-}
-
-let m = Number(prompt('Digite um número menor que 100 '));
-while (m < 100) {
-    console.log(m)
-    m += 10   
-}
-
-let terminar = false;
-let contador = 1;
-while (terminar != true){   
-    let continuar = confirm(`${contador} quer continuar no loop?`)
-    terminar = continuar === true ? false : true;
-    contador++
-}
-
-let terminar = false;
-let contador = 1
-while(!terminar){
-    terminar = !confirm(`${contador++} Quer continuar no loop?`)
-}
-console.log(`Voçê iterou ${contador} vezes`)
-let nomes = [];
-let terminar = false;
-while (!terminar){
-    let nome = prompt('Insere outro nome ou pressione CANCELAR ')
-    let idade = Number(prompt('Insere a idade ou pressione CANCELAR'))
-    if (nome != null) {
-        nomes.push(nome, idade)
-    } else {
-        terminar = true
-    }
-}
-for (let i = 0; i < nomes.length; i++) {
-    console.log(nomes[i]); 
-}
-let num = 1
-let par = 0 
-let impar = 0
-while (num != 0){
-    num = Number(prompt('Digite um número'))
-if (num != 0) {
-        if (num % 2 == 0) {
-            par += 1
-        } else{
-            impar += 1
-        }
-}
-}
-console.log(`Você digitou ${par} pares e ${impar} impar`)*/
-/*let sexo = ''
-while (sexo != 'M' && sexo !='F') {
-    sexo = prompt('Digite o seu Sexo ').toUpperCase()
-    if(sexo == 'M'){
-        console.log(`Você é ${sexo} macho`)
-    } else if(sexo == 'F') {
-        console.log(`Você é ${sexo} fémia`)
-    } else {
-        alert('Errado Digite novamente')
-    }
-}
 */
-let num = Number(prompt('Digite um número'))
-if (num / num && num / 1){
-    console.log(`o ${num} é primo`)
-} else {
-    alert(`O ${num} não é primo`)
+let n = 0;
+while (n < 100) {
+    n =+ 10
+    console.log(n)
 }
+
+
